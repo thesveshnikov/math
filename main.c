@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include "sum.h"
 
-int main(void) {
-    printf("Hello, World!\n");
+
+int main() {
+    sum();
     return 0;
 }
