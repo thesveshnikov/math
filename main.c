@@ -6,6 +6,7 @@
 
 
 int main() {
+    // Arithmetic operations
     sum();
     subtraction();
     multiplication();
