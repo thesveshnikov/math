@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "division.h"
 
 long double division(void) {

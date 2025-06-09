@@ -1,7 +1,7 @@
-#include "division.h"
-#include "multiplication.h"
-#include "sum.h"
-#include "subtraction.h"
+#include "arithmetic_operations/division.h"
+#include "arithmetic_operations/multiplication.h"
+#include "arithmetic_operations/sum.h"
+#include "arithmetic_operations/subtraction.h"
 
 
 int main() {

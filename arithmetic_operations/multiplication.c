@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "multiplication.h"
 
 long double multiplication(void) {
