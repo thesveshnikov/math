@@ -3,4 +3,4 @@ project(math C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(math main.c sum.c)
+add_executable(math main.c sum.c subtraction.c)
