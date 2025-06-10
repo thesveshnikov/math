@@ -3,14 +3,15 @@
 #include "arithmetic_operations/calculate_remainder.h"
 #include "arithmetic_operations/sum.h"
 #include "arithmetic_operations/subtraction.h"
-
+#include "numbers/natural_numbers.h"
 
 int main() {
     // Arithmetic operations
-    sum();
-    subtraction();
-    multiplication();
-    division();
-    calculate_remainder();
+    // sum();
+    // subtraction();
+    // multiplication();
+    // division();
+    // calculate_remainder();
+    natural_numbers();
     return 0;
 }
