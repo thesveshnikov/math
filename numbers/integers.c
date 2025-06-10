@@ -2,22 +2,29 @@
 #include <stdio.h>
 
 void integers(void) {
-    int StartOfSequence;
-    int EndOfSequence;
+    long int StartOfSequence;
+    long int EndOfSequence;
 
     printf("Enter where the sequence begins: ");
-    scanf("%d", &StartOfSequence);
+    if (scanf("%ld", &StartOfSequence) != 1) {
+        printf("Invalid input. Please enter a valid number.\n");
+        return;
+    }
 
     printf("Enter where the sequence ends: ");
-    scanf("%d", &EndOfSequence);
+    if (scanf("%ld", &EndOfSequence) != 1) {
+        printf("Invalid input. Please enter a valid number.\n");
+        return;
+    }
 
     if (StartOfSequence > EndOfSequence) {
-        printf("Error: %d is greater than %d.\n", StartOfSequence, EndOfSequence);
+        printf("Error: %ld is greater than %ld.\n", StartOfSequence, EndOfSequence);
     } else if (StartOfSequence == EndOfSequence) {
-        printf("Error: %d is equal to %d.\n", StartOfSequence, EndOfSequence);
+        printf("Error: %ld is equal to %ld.\n", StartOfSequence, EndOfSequence);
     } else {
-        for (int i = StartOfSequence; i <= EndOfSequence; i++) {
-            printf("%d ", i);
+        for (long int i = StartOfSequence; i <= EndOfSequence; i++) {
+            printf("%ld ", i);
         }
+        printf("\n");
     }
 }
