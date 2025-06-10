@@ -5,8 +5,6 @@
 #include "arithmetic_operations/subtraction.h"
 #include "numbers/natural_numbers.h"
 #include "numbers/whole_numbers.h"
-#include "numbers/integers_numbers.h"
-#include "numbers/rational_numbers.h"
 
 int main() {
     // Arithmetic operations
@@ -16,8 +14,6 @@ int main() {
     // division();
     // calculate_remainder();
     // natural_numbers();
-    // whole_numbers();
-    // integers();
-    rational_numbers();
+    whole_numbers();
     return 0;
 }
