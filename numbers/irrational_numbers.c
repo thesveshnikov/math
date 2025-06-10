@@ -1,8 +1,8 @@
-#include "rational_numbers.h"
+#include "irrational_numbers.h"
 #include <stdio.h>
 #include <math.h>
 
-void rational_numbers(void) {
+void irrational_numbers(void) {
     long double num;
     printf("Enter a number: ");
     scanf("%Lf", &num);
@@ -23,9 +23,9 @@ void rational_numbers(void) {
     }
 
     if (isRational) {
-        printf("The number is probably rational.\n");
-        printf("Approximate fractional representation: %lld/%d\n", numerator, denominator);
+        printf("The number is probably not irrational.\n");
+        printf("Approximate rational form: %lld/%d\n", numerator, denominator);
     } else {
-        printf("The number is probably not rational.\n");
+        printf("The number is probably irrational.\n");
     }
 }
