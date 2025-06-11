@@ -12,16 +12,18 @@
 
 int main() {
     // Arithmetic operations
-    // sum();
-    // subtraction();
-    // multiplication();
-    // division();
-    // calculate_remainder();
+    sum();
+    subtraction();
+    multiplication();
+    division();
+    calculate_remainder();
+
+    // Numbers
     // natural_numbers();
     // whole_numbers();
     // integers();
     // rational_numbers();
     // irrational_numbers();
-    real_numbers();
+    // real_numbers();
     return 0;
 }

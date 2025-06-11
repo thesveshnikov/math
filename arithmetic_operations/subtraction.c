@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include "subtraction.h"
+#include "./head/math_operations.h"
 
 long double subtraction(void) {
-    long double number_1, number_2;
+    MathOperation operation;
+    get_numbers(&operation);
 
-    printf("Enter a number: ");
-    scanf("%Lf", &number_1);
+    operation.result = operation.number1 - operation.number2;
+    printf("Subtraction: %.2Lf\n", operation.result);
 
-    printf("Enter another number: ");
-    scanf("%Lf", &number_2);
-
-    long double result = number_1 - number_2;
-
-    printf("Subtraction: %.2Lf\n", result);
-
-    return result;
+    return operation.result;
 }
