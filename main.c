@@ -3,6 +3,7 @@
 #include "arithmetic_operations/calculate_remainder.h"
 #include "arithmetic_operations/sum.h"
 #include "arithmetic_operations/subtraction.h"
+#include "fractions_decimals_and_percentages/fraction_conversion.h"
 #include "fractions_decimals_and_percentages/simplifying_fractions.h"
 #include "fractions_decimals_and_percentages/types_of_fractions.h"
 #include "numbers/integers_numbers.h"
@@ -40,6 +41,7 @@ int main() {
 
     // Fractions, decimals and percentages
     // types_of_fractions();
-    simplifying_fractions();
+    // simplifying_fractions();
+    fraction_conversion();
     return 0;
 }
