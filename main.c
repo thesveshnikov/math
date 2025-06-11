@@ -9,14 +9,15 @@
 #include "numbers/whole_numbers.h"
 #include "numbers/rational_numbers.h"
 #include "numbers/real_numbers.h"
+#include "order_of_operations/exponents_and_orders.h"
 
 int main() {
     // Arithmetic operations
-    sum();
-    subtraction();
-    multiplication();
-    division();
-    calculate_remainder();
+    // sum();
+    // subtraction();
+    // multiplication();
+    // division();
+    // calculate_remainder();
 
     // Numbers
     // natural_numbers();
@@ -25,5 +26,8 @@ int main() {
     // rational_numbers();
     // irrational_numbers();
     // real_numbers();
+
+    // Order of operations
+    exponents_and_orders();
     return 0;
 }
