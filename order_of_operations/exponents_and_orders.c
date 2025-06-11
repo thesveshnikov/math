@@ -1,21 +1,14 @@
 #include "./head/stack_operations.h"
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 #include <ctype.h>
 
 void exponents_and_orders(void) {
     char expr[MAX], postfix[2 * MAX];
     int result;
 
-    printf("Enter expression with exponents (use ^ for exponentiation): ");
+    printf("Enter expression: ");
     fgets(expr, sizeof(expr), stdin);
-
-    for (int i = 0; expr[i] != '\0'; i++) {
-        if (expr[i] == '^') {
-            expr[i] = '*';
-        }
-    }
 
     infixToPostfix(expr, postfix);
 
@@ -37,13 +30,7 @@ void exponents_and_orders(void) {
             switch (postfix[i]) {
                 case '+': push(&s, a + b); break;
                 case '-': push(&s, a - b); break;
-                case '*':
-                    if (i > 0 && postfix[i-1] == ' ') {
-                        push(&s, (int)pow(a, b));
-                    } else {
-                        push(&s, a * b);
-                    }
-                    break;
+                case '*': push(&s, a * b); break;
                 case '/':
                     if (b == 0) {
                         fprintf(stderr, "Error: division by zero\n");

@@ -29,7 +29,7 @@ int main() {
     // real_numbers();
 
     // Order of operations
-    // exponents_and_orders();
-    parentheses_and_brackets();
+    exponents_and_orders();
+    // parentheses_and_brackets();
     return 0;
 }
