@@ -34,7 +34,9 @@ void fraction_conversion(void) {
     }
 
     float conversion_to_decimal = (float)numerator / denominator;
+    float conversion_to_percentage = (float)numerator / denominator;
 
     printf("Fraction: %d/%d\n", numerator, denominator);
     printf("Fraction converted to decimal: %.2f\n", conversion_to_decimal);
+    printf("Fraction converted to percentage: %.2f%\n", conversion_to_percentage);
 }
