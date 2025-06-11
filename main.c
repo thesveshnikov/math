@@ -9,6 +9,7 @@
 #include "numbers/whole_numbers.h"
 #include "numbers/rational_numbers.h"
 #include "numbers/real_numbers.h"
+#include "order_of_operations/addition_and_subtraction.h"
 #include "order_of_operations/exponents_and_orders.h"
 #include "order_of_operations/parentheses_and_brackets.h"
 
@@ -29,7 +30,8 @@ int main() {
     // real_numbers();
 
     // Order of operations
-    exponents_and_orders();
+    // exponents_and_orders();
     // parentheses_and_brackets();
+    addition_and_subtraction();
     return 0;
 }
