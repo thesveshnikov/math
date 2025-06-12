@@ -1,16 +1,8 @@
+#include "head/math_utils.h"
 #include "simplifying_fractions.h"
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-
-int gcd(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
 
 void simplifying_fractions(void) {
     char input[200];
