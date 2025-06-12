@@ -3,6 +3,7 @@
 #include "arithmetic_operations/calculate_remainder.h"
 #include "arithmetic_operations/sum.h"
 #include "arithmetic_operations/subtraction.h"
+#include "exponents_and_roots/cube_roots.h"
 #include "fractions_decimals_and_percentages/fraction_conversion.h"
 #include "fractions_decimals_and_percentages/operations_with_fractions_and_decimals.h"
 #include "fractions_decimals_and_percentages/simplifying_fractions.h"
@@ -50,6 +51,7 @@ int main() {
 
     // Exponents and Roots
     // powers();
-    square_roots();
+    // square_roots();
+    cube_roots();
     return 0;
 }
