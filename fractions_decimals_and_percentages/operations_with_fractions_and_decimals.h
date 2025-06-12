@@ -1,0 +1,6 @@
+#ifndef OPERATIONS_WITH_FRACTIONS_AND_DECIMALS_H
+#define OPERATIONS_WITH_FRACTIONS_AND_DECIMALS_H
+
+void operations_with_fractions_and_decimals(void);
+
+#endif //OPERATIONS_WITH_FRACTIONS_AND_DECIMALS_H
