@@ -18,6 +18,7 @@
 #include "order_of_operations/multiplication_and_division.h"
 #include "order_of_operations/parentheses_and_brackets.h"
 #include "exponents_and_roots/powers.h"
+#include "exponents_and_roots/square_roots.h"
 
 int main() {
     // Arithmetic operations
@@ -48,6 +49,7 @@ int main() {
     // operations_with_fractions_and_decimals();
 
     // Exponents and Roots
-    powers();
+    // powers();
+    square_roots();
     return 0;
 }
