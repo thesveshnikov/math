@@ -30,6 +30,7 @@
 #include "ratios_and_proportions/direct_and_inverse_proportions/direct_proportion.h"
 #include "ratios_and_proportions/direct_and_inverse_proportions/inverse_proportion.h"
 #include "word_problems/age_problems.h"
+#include "word_problems/work_rate_problems.h"
 
 int main() {
     // Arithmetic operations
@@ -78,6 +79,7 @@ int main() {
     // greatest_common_divisor();
 
     // Word problems
-    age_problems();
+    // age_problems();
+    work_rate_problems();
     return 0;
 }
