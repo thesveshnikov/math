@@ -4,6 +4,7 @@
 #include "arithmetic_operations/sum.h"
 #include "arithmetic_operations/subtraction.h"
 #include "basic_number_theory/factors_and_multiples.h"
+#include "basic_number_theory/greatest_common_divisor.h"
 #include "basic_number_theory/least_common_multiple.h"
 #include "basic_number_theory/prime_and_composite_numbers.h"
 #include "exponents_and_roots/cube_roots.h"
@@ -72,6 +73,7 @@ int main() {
     // Basic number theory
     // prime_and_composite_numbers();
     // factors_and_multiples();
-    least_common_multiple();
+    // least_common_multiple();
+    greatest_common_divisor();
     return 0;
 }
