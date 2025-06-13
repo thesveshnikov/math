@@ -22,6 +22,7 @@
 #include "exponents_and_roots/powers.h"
 #include "exponents_and_roots/square_roots.h"
 #include "ratios_and_proportions/simplifying_ratios.h"
+#include "ratios_and_proportions/direct_and_inverse_proportions/direct_proportion.h"
 
 int main() {
     // Arithmetic operations
@@ -58,6 +59,7 @@ int main() {
     // exponent_laws();
 
     // Ratios and proportions
-    simplifying_ratios();
+    // simplifying_ratios();
+    direct_proportion();
     return 0;
 }
