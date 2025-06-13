@@ -3,6 +3,36 @@ project(math C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(math main.c arithmetic_operations/sum.c arithmetic_operations/subtraction.c arithmetic_operations/multiplication.c arithmetic_operations/division.c arithmetic_operations/calculate_remainder.c arithmetic_operations/head/math_operations.c numbers/natural_numbers.c numbers/whole_numbers.c numbers/integers.c numbers/rational_numbers.c numbers/irrational_numbers.c numbers/real_numbers.c order_of_operations/exponents_and_orders.c order_of_operations/parentheses_and_brackets.c order_of_operations/head/stack_operations.c order_of_operations/addition_and_subtraction.c order_of_operations/multiplication_and_division.c fractions_decimals_and_percentages/types_of_fractions.c fractions_decimals_and_percentages/simplifying_fractions.c fractions_decimals_and_percentages/fraction_conversion.c fractions_decimals_and_percentages/head/math_utils.c fractions_decimals_and_percentages/operations_with_fractions_and_decimals.c exponents_and_roots/powers.c exponents_and_roots/square_roots.c exponents_and_roots/cube_roots.c exponents_and_roots/exponent_laws.c ratios_and_proportions/simplifying_ratios.c ratios_and_proportions/head/math_utils.c ratios_and_proportions/direct_and_inverse_proportions/direct_proportion.c ratios_and_proportions/direct_and_inverse_proportions/inverse_proportion.c ratios_and_proportions/unit_rates.c basic_number_theory/prime_and_composite_numbers.c basic_number_theory/factors_and_multiples.c basic_number_theory/least_common_multiple.c basic_number_theory/greatest_common_divisor.c word_problems/age_problems.c word_problems/work_rate_problems.c word_problems/distance_speed_and_time_problems.c)
+file(GLOB ARITHMETIC_SRCS arithmetic_operations/*.c arithmetic_operations/head/*.c)
+
+file(GLOB NUMBERS_SRCS numbers/*.c)
+
+file(GLOB ORDER_SRCS order_of_operations/*.c order_of_operations/head/*.c)
+
+file(GLOB FRACTIONS_SRCS fractions_decimals_and_percentages/*.c fractions_decimals_and_percentages/head/*.c)
+
+file(GLOB EXPONENTS_SRCS exponents_and_roots/*.c)
+
+file(GLOB RATIOS_SRCS ratios_and_proportions/*.c ratios_and_proportions/head/*.c ratios_and_proportions/direct_and_inverse_proportions/*.c)
+
+file(GLOB THEORY_SRCS basic_number_theory/*.c)
+
+file(GLOB WORD_PROBLEMS_SRCS word_problems/*.c)
+
+list(REMOVE_ITEM NUMBERS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/numbers/integers_numbers.c")
+
+set(SOURCES
+        main.c
+        ${ARITHMETIC_SRCS}
+        ${NUMBERS_SRCS}
+        ${ORDER_SRCS}
+        ${FRACTIONS_SRCS}
+        ${EXPONENTS_SRCS}
+        ${RATIOS_SRCS}
+        ${THEORY_SRCS}
+        ${WORD_PROBLEMS_SRCS}
+)
+
+add_executable(math ${SOURCES})
 
 target_link_libraries(math m)
