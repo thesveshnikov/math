@@ -30,9 +30,12 @@
 #include "ratios_and_proportions/direct_and_inverse_proportions/direct_proportion.h"
 #include "ratios_and_proportions/direct_and_inverse_proportions/inverse_proportion.h"
 #include "word_problems/age_problems.h"
+#include "word_problems/distance_speed_and_time_problems.h"
 #include "word_problems/work_rate_problems.h"
 
 int main() {
+    // ARITHMETIC
+
     // Arithmetic operations
     // sum();
     // subtraction();
@@ -80,6 +83,7 @@ int main() {
 
     // Word problems
     // age_problems();
-    work_rate_problems();
+    // work_rate_problems();
+    distance_speed_and_time_problems();
     return 0;
 }
