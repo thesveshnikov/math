@@ -21,6 +21,7 @@
 #include "order_of_operations/parentheses_and_brackets.h"
 #include "exponents_and_roots/powers.h"
 #include "exponents_and_roots/square_roots.h"
+#include "ratios_and_proportions/simplifying_ratios.h"
 
 int main() {
     // Arithmetic operations
@@ -54,6 +55,9 @@ int main() {
     // powers();
     // square_roots();
     // cube_roots();
-    exponent_laws();
+    // exponent_laws();
+
+    // Ratios and proportions
+    simplifying_ratios();
     return 0;
 }
