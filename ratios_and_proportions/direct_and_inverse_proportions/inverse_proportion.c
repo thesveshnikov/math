@@ -1,13 +1,13 @@
-#include "direct_proportion.h"
+#include "inverse_proportion.h"
 #include <stdio.h>
 
-void direct_proportion() {
-    float x, y, k = 2.0;
+void inverse_proportion(void) {
+    float x, y, k = 24.0;
 
     printf("Enter the value of x: ");
     scanf("%f", &x);
 
-    y = k * x;
+    y = k / x;
 
     printf("The value of y is: %.2f\n", y);
 }
