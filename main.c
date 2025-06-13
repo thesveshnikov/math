@@ -29,6 +29,7 @@
 #include "ratios_and_proportions/unit_rates.h"
 #include "ratios_and_proportions/direct_and_inverse_proportions/direct_proportion.h"
 #include "ratios_and_proportions/direct_and_inverse_proportions/inverse_proportion.h"
+#include "word_problems/age_problems.h"
 
 int main() {
     // Arithmetic operations
@@ -74,6 +75,9 @@ int main() {
     // prime_and_composite_numbers();
     // factors_and_multiples();
     // least_common_multiple();
-    greatest_common_divisor();
+    // greatest_common_divisor();
+
+    // Word problems
+    age_problems();
     return 0;
 }
