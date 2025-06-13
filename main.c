@@ -3,6 +3,7 @@
 #include "arithmetic_operations/calculate_remainder.h"
 #include "arithmetic_operations/sum.h"
 #include "arithmetic_operations/subtraction.h"
+#include "basic_number_theory/prime_and_composite_numbers.h"
 #include "exponents_and_roots/cube_roots.h"
 #include "exponents_and_roots/exponent_laws.h"
 #include "fractions_decimals_and_percentages/fraction_conversion.h"
@@ -64,6 +65,9 @@ int main() {
     // simplifying_ratios();
     // direct_proportion();
     // inverse_proportion();
-    unit_rates();
+    // unit_rates();
+
+    // Basic number theory
+    prime_and_composite_numbers();
     return 0;
 }
