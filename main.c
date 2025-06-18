@@ -54,7 +54,7 @@ int main() {
     // Order of operations
     // exponents_and_orders();
     // parentheses_and_brackets();
-    // addition_and_subtraction();
+    addition_and_subtraction();
     // multiplication_and_division();
 
     // Fractions, decimals and percentages
@@ -84,6 +84,6 @@ int main() {
     // Word problems
     // age_problems();
     // work_rate_problems();
-    distance_speed_and_time_problems();
+    // distance_speed_and_time_problems();
     return 0;
 }

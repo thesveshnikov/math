@@ -1,7 +1,6 @@
 #include "addition_and_subtraction.h"
 #include "./head/stack_operations.h"
 #include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 
 void addition_and_subtraction(void) {
